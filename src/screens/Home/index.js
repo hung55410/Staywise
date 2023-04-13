@@ -10,7 +10,7 @@ const HomeScreen = props => {
       <Pressable
         style={styles.searchButton}
         onPress={() => console.warn('button search clicked')}>
-        <Fontisto name="search" size={25} color={'#f15454'} />
+        <Fontisto name="search" size={20} color={'#f15454'} />
         <Text style={styles.searchButtonText}>Bạn muốn đi đâu?</Text>
       </Pressable>
 
