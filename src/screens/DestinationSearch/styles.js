@@ -17,11 +17,14 @@ const styles = StyleSheet.create({
   },
   iconContainer: {
     backgroundColor: '#EDEDED',
-    padding: 12,
+    padding: 10,
     borderRadius: 12,
     marginRight: 14,
   },
-  locationText: {},
+  locationText: {
+    fontSize: 16,
+    fontWeight: 500,
+  },
 });
 
 export default styles;
