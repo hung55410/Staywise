@@ -9,8 +9,9 @@ import React from 'react';
 import {SafeAreaView, StatusBar} from 'react-native';
 
 // import HomeScreen from './src/screens/Home';
-import SearchResultsScreen from './src/screens/SearchResults';
+// import SearchResultsScreen from './src/screens/SearchResults';
 // import Post from './src/components/Post';
+import DestinationSearchScreen from './src/screens/DestinationSearch';
 
 // import feed from './assets/data/feed';
 
@@ -23,7 +24,8 @@ function App(): JSX.Element {
       <SafeAreaView>
         {/* <HomeScreen /> */}
         {/* <Post post={post1} /> */}
-        <SearchResultsScreen />
+        {/* <SearchResultsScreen /> */}
+        <DestinationSearchScreen />
       </SafeAreaView>
     </>
   );
