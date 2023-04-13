@@ -44,6 +44,7 @@ const styles = StyleSheet.create({
   searchButtonText: {
     fontSize: 16,
     fontWeight: 600,
+    paddingLeft: 12,
   },
 });
 
