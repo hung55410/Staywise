@@ -23,6 +23,7 @@ const styles = StyleSheet.create({
   },
   description: {
     letterSpacing: 0.7,
+    fontWeight: 600,
   },
   prices: {
     fontSize: 18,
@@ -37,9 +38,10 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
   totalPrice: {
-    color: '#5b5b5b',
+    color: '#5FAE57',
     textDecorationLine: 'underline',
     fontSize: 16,
+    fontWeight: 500,
   },
 });
 
