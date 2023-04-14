@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
-import {View, TextInput, FlatList, Text} from 'react-native';
+import {View, TextInput, FlatList, Text, Pressable} from 'react-native';
 import Ionicons from 'react-native-vector-icons/Ionicons';
+import {useNavigation} from '@react-navigation/native';
 
 import styles from './styles';
 
@@ -8,6 +9,7 @@ import searchResults from '../../../assets/data/search';
 
 const DestinationSearchScreen = props => {
   const [inputText, setInputText] = useState('');
+  const navigation = useNavigation();
   return (
     <View style={styles.container}>
       {/* Input components */}
@@ -21,12 +23,14 @@ const DestinationSearchScreen = props => {
       <FlatList
         data={searchResults}
         renderItem={({item}) => (
-          <View style={styles.row}>
+          <Pressable
+            onPress={() => navigation.navigate('Guests')}
+            style={styles.row}>
             <View style={styles.iconContainer}>
               <Ionicons name={'ios-location-sharp'} size={26} />
             </View>
             <Text style={styles.locationText}>{item.description}</Text>
-          </View>
+          </Pressable>
         )}
       />
     </View>
