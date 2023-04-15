@@ -90,7 +90,14 @@ const GuestsScreen = props => {
       </View>
 
       <Pressable
-        onPress={() => navigation.navigate()}
+        onPress={() =>
+          navigation.navigate('Home', {
+            screen: 'Explore',
+            params: {
+              screen: 'SearchResults',
+            },
+          })
+        }
         style={styles.buttonSearch}>
         <Text style={styles.buttonSearchText}>Tìm kiếm</Text>
       </Pressable>
